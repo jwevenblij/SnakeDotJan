@@ -7,10 +7,10 @@ A simple Snake game fully coded in Java. Uses the Swing + FlatLaf library and Gr
 - The snake cannot mirror its own active movement direction (go left when moving right, up when going down, etc.)
 
  Controls:
-W        - UP.
-A        - LEFT.
-S        - DOWN.
-D        - RIGHT.
-Spacebar - Reset (on game over).
+W        : UP
+A        : LEFT.
+S        : DOWN.
+D        : RIGHT.
+Spacebar : Reset (on game over).
 
 By Jan Evenblij, 2024 - The Netherlands
