@@ -11,8 +11,6 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import java.util.concurrent.ThreadLocalRandom;
 
-//import static panels.CardsPanel.container;
-
 public class GameArea extends JPanel implements ActionListener {
 
     static Food food = new Food(ThreadLocalRandom.current().nextInt(1, 10 + 1), ThreadLocalRandom.current().nextInt(1, 10 + 1));
@@ -64,14 +62,12 @@ public class GameArea extends JPanel implements ActionListener {
 
             // Draw all snake body parts by iterating over body length
             do {
-//            g2D.fillRect(bodyParts.get(snakeLengthIterator).xCoord()*31, bodyParts.get(snakeLengthIterator).yCoord()*31, (int) ((this.getWidth()/32)*ScreenSettings.getScreenScaling()), (int) ((this.getHeight()/32)*ScreenSettings.getScreenScaling()));
                 g2D.fillRect(bodyParts.get(snakeLengthIterator).xCoord()*16, bodyParts.get(snakeLengthIterator).yCoord()*16, 16, 16);
                 snakeLengthIterator++;
             } while (snakeLengthIterator < bodyParts.size());
 
             snakeLengthIterator = 0;
 
-//        g2D.fillRect(food.xCoord()*31, food.yCoord()*31, (int) ((this.getWidth()/32)*ScreenSettings.getScreenScaling()), (int) ((this.getHeight()/32)*ScreenSettings.getScreenScaling()));
             g2D.fillRect(food.xCoord()*16, food.yCoord()*16, 16, 16);
         } else {
             g2D.setPaint(Color.black);

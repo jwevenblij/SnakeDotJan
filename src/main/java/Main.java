@@ -6,19 +6,13 @@ import java.awt.*;
 public class Main {
 
     public static void main(String[] args) {
-        EventQueue.invokeLater(new Runnable() {
-
-            @Override
-            public void run() {
-                create();
-            }
-        });
+        EventQueue.invokeLater(Main::create);
 
     }
 
     public static void create() {
         FlatDarkLaf.setup();
-        MainWindow mainWindow = new MainWindow();
+        new MainWindow();
     }
 
 }

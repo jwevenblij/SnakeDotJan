@@ -3,8 +3,6 @@ package utilities;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import panels.GameOverScreen;
-import gameobjects.BodyParts;
 import panels.GameArea;
 
 public class Input implements KeyListener {
@@ -40,7 +38,6 @@ public class Input implements KeyListener {
         }
         if (e.getKeyCode()==KeyEvent.VK_SPACE) {
             if (!GameArea.alive) {
-                System.out.println("SPACEBARRRR");
                 GameArea.resetGame();
             }
         }
